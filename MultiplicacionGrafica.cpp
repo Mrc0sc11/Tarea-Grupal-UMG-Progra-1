@@ -19,13 +19,12 @@ public:
     }
 };
 
-int main() {
+void ejecutarMultiplicacionGrafica() {
     int a, b;
     cout << "Ingrese dos numeros: ";
     cin >> a >> b;
 
     MultiplicacionManual::mostrarMultiplicacion(a, b);
 
-    return 0;
 }
 

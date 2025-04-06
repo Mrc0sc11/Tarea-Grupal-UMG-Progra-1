@@ -34,7 +34,7 @@ public:
     }
 };
 
-int main() {
+void ejecutarCalculadora() {
     Calculadora calc;
     int opcion;
     char continuar;
@@ -81,7 +81,5 @@ int main() {
         }
 
     } while (continuar == 's' || continuar == 'S');
-
-    return 0;
 }
 

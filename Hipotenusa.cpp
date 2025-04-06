@@ -13,7 +13,7 @@ public:
     }
 };
 
-int main() {
+void ejecutarHipotenusa() {
     double c1, c2;
     cout << "Ingrese los dos catetos, uno luego del otro: ";
     cin >> c1 >> c2;
@@ -21,6 +21,5 @@ int main() {
     Triangulo t(c1, c2);
     cout << "Hipotenusa: " << t.calcularHipotenusa() << endl;
 
-    return 0;
 }
 

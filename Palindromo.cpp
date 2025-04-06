@@ -1,26 +1,21 @@
 #include <iostream>
-#include <algorithm>
+#include <string>
+#include <algorithm> // Incluir para usar reverse
+
 using namespace std;
 
-class Palindromo {
-public:
-    static bool esPalindromo(string str) {
-        string original = str;
-        reverse(str.begin(), str.end());
-        return original == str;
+void ejecutarPalindromo() {
+    string palabra;
+    cout << "Ingrese una palabra o numero para verificar si es un palindromo: ";
+    cin >> palabra;
+
+    string palabraReversa = palabra;
+    reverse(palabraReversa.begin(), palabraReversa.end()); // Función reverse corregida
+
+    if (palabra == palabraReversa) {
+        cout << palabra << " es un palindromo." << endl;
+    } else {
+        cout << palabra << " no es un palindromo." << endl;
     }
-};
-
-int main() {
-    string texto;
-    cout << "Ingrese una palabra o numero: ";
-    cin >> texto;
-
-    if (Palindromo::esPalindromo(texto))
-        cout << "Es un palindromo" << endl;
-    else
-        cout << "No es un palindromo" << endl;
-
-    return 0;
 }
 

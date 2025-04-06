@@ -20,7 +20,7 @@ public:
     }
 };
 
-int main() {
+void ejecutarFigurasGeometricas() {
     int opcion, tamano;
     cout << "Seleccione una figura:\n1. Cuadrado\n2. Triangulo\nOpcion: ";
     cin >> opcion;
@@ -31,6 +31,5 @@ int main() {
     if (opcion == 1) Figuras::cuadrado(tamano);
     else if (opcion == 2) Figuras::triangulo(tamano);
 
-    return 0;
 }
 

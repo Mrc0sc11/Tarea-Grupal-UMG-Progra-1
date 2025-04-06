@@ -46,7 +46,7 @@ private:
     }
 };
 
-int main() {
+void ejecutarPiedraPapelTijera() {
     // Inicializamos la semilla solo una vez
     srand(time(0));
 
@@ -59,5 +59,4 @@ int main() {
         cin >> repetir;
     } while (repetir == 's' || repetir == 'S');
 
-    return 0;
 }
